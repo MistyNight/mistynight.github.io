@@ -28,14 +28,14 @@
             // Create objects.
             /////////////////////////////////////////////////
             // - Set background.
-            // var starfield = new THREE.Mesh(
-            //     new THREE.SphereGeometry(90, 64, 64),                
-            //     new THREE.MeshBasicMaterial({
-            //         map: THREE.ImageUtils.loadTexture('images/earth/galaxy_starfield.png'), 
-            //         side: THREE.BackSide
-            //     })
-            // );
-            // scene.add(starfield);
+            var starfield = new THREE.Mesh(
+                new THREE.SphereGeometry(90, 64, 64),                
+                new THREE.MeshBasicMaterial({
+                    map: THREE.ImageUtils.loadTexture('images/earth/galaxy_starfield.png'), 
+                    side: THREE.BackSide
+                })
+            );
+            scene.add(starfield);
 
             // - Set 3D earth sphere model.
             // const geometry = new THREE.BoxGeometry();
@@ -46,10 +46,10 @@
             var sphere = new THREE.Mesh(
                 new THREE.SphereGeometry(0.5, 32, 32),          // geometry                
                 new THREE.MeshPhongMaterial({          
-                    map: THREE.ImageUtils.loadTexture('images/earth/2_no_clouds_4k.jpg'),
-                    bumpMap: THREE.ImageUtils.loadTexture('images/earth/elev_bump_4k.jpg'),
+                    map: THREE.ImageUtils.loadTexture('images/earth/2_no_clouds_8k.jpg'),
+                    bumpMap: THREE.ImageUtils.loadTexture('images/earth/elev_bump_8k.jpg'),
                     bumpScale:   0.005,
-                    specularMap: THREE.ImageUtils.loadTexture('images/earth/water_4k.png'),
+                    specularMap: THREE.ImageUtils.loadTexture('images/earth/water_8k.png'),
                     specular: new THREE.Color('grey')      
                 })   // texture
             );
